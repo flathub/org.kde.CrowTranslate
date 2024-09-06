@@ -33,9 +33,10 @@ modules:
       - type: git
         url: https://invent.kde.org/office/crow-translate.git
         # tag: 3.0.0 Not tagged yet
-        commit: 92c1c42f482a89a4bce19b579db35f7addf2b4aa
+        commit: be234547193af132138081a904e9cb80a016b66a
         x-checker-data:
           type: git
+        tag: v3.0.0
     modules:
       - name: tesseract
         buildsystem: cmake-ninja
