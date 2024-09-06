@@ -32,7 +32,6 @@ modules:
     sources:
       - type: git
         url: https://invent.kde.org/office/crow-translate.git
-        # tag: 3.0.0 Not tagged yet
         commit: be234547193af132138081a904e9cb80a016b66a
         x-checker-data:
           type: git
