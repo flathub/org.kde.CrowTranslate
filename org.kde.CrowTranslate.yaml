@@ -32,10 +32,10 @@ modules:
     sources:
       - type: git
         url: https://invent.kde.org/office/crow-translate.git
-        commit: be234547193af132138081a904e9cb80a016b66a
+        commit: 2d5c588fa07576088c9a3aa533b49179523553d5
         x-checker-data:
           type: git
-        tag: v3.0.0
+        tag: v3.1.0
     modules:
       - name: tesseract
         buildsystem: cmake-ninja
