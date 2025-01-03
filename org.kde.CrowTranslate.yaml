@@ -34,7 +34,9 @@ modules:
         url: https://invent.kde.org/office/crow-translate.git
         commit: 2d5c588fa07576088c9a3aa533b49179523553d5
         x-checker-data:
-          type: git
+          type: anitya
+          project-id: 232133
+          tag-template: v$version
         tag: v3.1.0
     modules:
       - name: tesseract
