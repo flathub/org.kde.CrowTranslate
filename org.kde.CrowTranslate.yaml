@@ -30,14 +30,13 @@ modules:
   - name: crow-translate
     buildsystem: cmake-ninja
     sources:
-      - type: git
-        url: https://invent.kde.org/office/crow-translate.git
-        commit: 2d5c588fa07576088c9a3aa533b49179523553d5
+      - type: archive
+        url: https://download.kde.org/stable/crow-translate/3.1.0/crow-translate-v3.1.0.tar.gz
+        sha256: 8cafa4a812079020839beaf0b133e08be6e47d6ffa1cf90f3417efdc7589c7a1
         x-checker-data:
           type: anitya
           project-id: 232133
-          tag-template: v$version
-        tag: v3.1.0
+          url-template: https://download.kde.org/stable/crow-translate/$version/crow-translate-v$version.tar.gz
     modules:
       - name: tesseract
         buildsystem: cmake-ninja
