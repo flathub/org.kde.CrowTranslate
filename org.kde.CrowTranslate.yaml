@@ -31,7 +31,7 @@ modules:
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: https://download.kde.org/stable/crow-translate/4.0.2/crow-translate-v4.0.2.tar.gz
+        url: https://download.kde.org/stable/crow-translate/4.0.2/crow-translate-4.0.2.tar.gz
         sha256: e24b8e78b0bffa5dd02875e25126c371967f53729102c784e4e02d165feb3753
         x-checker-data:
           type: anitya
