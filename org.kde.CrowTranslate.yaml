@@ -1,7 +1,7 @@
 id: org.kde.CrowTranslate
 sdk: org.kde.Sdk
 runtime: org.kde.Platform
-runtime-version: 6.10
+runtime-version: 6.11
 add-extensions:
   org.kde.CrowTranslate.tessdata:
     directory: share/tessdata
@@ -43,6 +43,16 @@ modules:
           - aarch64
         url: https://github.com/microsoft/onnxruntime/releases/download/v1.22.0/onnxruntime-linux-aarch64-1.22.0.tgz
         sha256: bb76395092d150b52c7092dc6b8f2fe4d80f0f3bf0416d2f269193e347e24702
+  - name: kwayland
+    buildsystem: cmake-ninja
+    sources:
+      - type: archive
+        url: https://download.kde.org/stable/plasma/6.7.3/kwayland-6.7.3.tar.xz
+        sha256: 0e331dca128a9e2f0b408e1020e5b613e24d742cc1bfd8bb5f89459fee11c217
+        x-checker-data:
+          type: anitya
+          project-id: 8761
+          url-template: https://download.kde.org/stable/plasma/$version/kwayland-$version.tar.xz
   - name: crow-translate
     buildsystem: cmake-ninja
     sources:
@@ -52,7 +62,7 @@ modules:
         x-checker-data:
           type: anitya
           project-id: 232133
-          url-template: https://download.kde.org/stable/crow-translate/$version/crow-translate-v$version.tar.gz
+          url-template: https://download.kde.org/stable/crow-translate/$version/crow-translate-$version.tar.gz
     modules:
       - name: tesseract
         buildsystem: cmake-ninja
