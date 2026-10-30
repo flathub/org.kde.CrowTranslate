@@ -36,12 +36,14 @@ modules:
       - type: archive
         only-arches:
           - x86_64
-        url: https://github.com/microsoft/onnxruntime/releases/download/v1.22.0/onnxruntime-linux-x64-1.22.0.tgz
+        url: 
+          https://github.com/microsoft/onnxruntime/releases/download/v1.22.0/onnxruntime-linux-x64-1.22.0.tgz
         sha256: 8344d55f93d5bc5021ce342db50f62079daf39aaafb5d311a451846228be49b3
       - type: archive
         only-arches:
           - aarch64
-        url: https://github.com/microsoft/onnxruntime/releases/download/v1.22.0/onnxruntime-linux-aarch64-1.22.0.tgz
+        url: 
+          https://github.com/microsoft/onnxruntime/releases/download/v1.22.0/onnxruntime-linux-aarch64-1.22.0.tgz
         sha256: bb76395092d150b52c7092dc6b8f2fe4d80f0f3bf0416d2f269193e347e24702
   - name: crow-translate
     buildsystem: cmake-ninja
@@ -52,7 +54,8 @@ modules:
         x-checker-data:
           type: anitya
           project-id: 232133
-          url-template: https://download.kde.org/stable/crow-translate/$version/crow-translate-v$version.tar.gz
+          url-template: 
+            https://download.kde.org/stable/crow-translate/$version/crow-translate-v$version.tar.gz
     modules:
       - name: tesseract
         buildsystem: cmake-ninja
@@ -63,8 +66,8 @@ modules:
           - /bin
         sources:
           - type: archive
-            url: https://github.com/tesseract-ocr/tesseract/archive/refs/tags/5.5.2.tar.gz
-            sha256: 6235ea0dae45ea137f59c09320406f5888383741924d98855bd2ce0d16b54f21
+            url: https://github.com/tesseract-ocr/tesseract/archive/refs/tags/5.5.4.tar.gz
+            sha256: a8dbf8b8c8ee427ff6ad1d99116502feaf59440af1adb893caf60a6576826cf4
             x-checker-data:
               type: anitya
               project-id: 4954
@@ -77,12 +80,14 @@ modules:
               - -DBUILD_SHARED_LIBS:BOOL=ON
             sources:
               - type: archive
-                url: https://github.com/DanBloomberg/leptonica/releases/download/1.87.0/leptonica-1.87.0.tar.gz
+                url: 
+                  https://github.com/DanBloomberg/leptonica/releases/download/1.87.0/leptonica-1.87.0.tar.gz
                 sha256: c73363397f96eb1295602bf44d708a994ad42046c791bf03ea0505d829bdb6a7
                 x-checker-data:
                   type: anitya
                   project-id: 1549
-                  url-template: https://github.com/DanBloomberg/leptonica/releases/download/$version/leptonica-$version.tar.gz
+                  url-template: 
+                    https://github.com/DanBloomberg/leptonica/releases/download/$version/leptonica-$version.tar.gz
 
       - name: tessdata_fast
         buildsystem: simple
