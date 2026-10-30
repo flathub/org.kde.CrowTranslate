@@ -52,7 +52,7 @@ modules:
         x-checker-data:
           type: anitya
           project-id: 232133
-          url-template: https://download.kde.org/stable/crow-translate/$version/crow-translate-v$version.tar.gz
+          url-template: https://download.kde.org/stable/crow-translate/$version/crow-translate-$version.tar.gz
     modules:
       - name: tesseract
         buildsystem: cmake-ninja
