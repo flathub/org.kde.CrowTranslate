@@ -47,8 +47,8 @@ modules:
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: https://download.kde.org/stable/plasma/6.7.3/kwayland-6.7.3.tar.xz
-        sha256: 0e331dca128a9e2f0b408e1020e5b613e24d742cc1bfd8bb5f89459fee11c217
+        url: https://download.kde.org/stable/plasma/6.8.3/kwayland-6.8.3.tar.xz
+        sha256: 00090254b86f1774e296b4dc7d69d073ee08efb75419c9b5d0955eeae0378a56
         x-checker-data:
           type: anitya
           project-id: 8761
